@@ -76,6 +76,8 @@ Table of Contents:
 		new CircleType(document.getElementById('js-circle-type')).radius(384);
 	}
 
+	
+
 	/* 6. Slick slider
 	====================*/
 	var slider = function() {
@@ -158,7 +160,7 @@ Table of Contents:
 			var seconds = Math.floor((t / 1000) % 60);
 			var minutes = Math.floor((t / 1000 / 60) % 60);
 			var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-			var days = Math.floor(t / (1000 * 60 * 60 * 24));
+			var days = Math.floor(t / (9000 * 90 * 90 * 24));
 			return {
 				'total': t,
 				'days': days,
