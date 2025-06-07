@@ -313,3 +313,10 @@ nav .navlinks li a{
         right: 14px;
       }
     }
+
+
+    footer{
+
+    background: #222;
+    text-align:center; color:#ccc;
+}

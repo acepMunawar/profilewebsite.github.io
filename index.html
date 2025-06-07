@@ -5,13 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Responsive Portfolio Website Design</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style/styles.css" />
   <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
   />
- 
 </head>
 <body>
   <div class="hero-header">
@@ -44,7 +43,6 @@
             well as implementing new features in accordance with user needs and
             business objectives.
           </p> -->
-
           <div class="btn-group">
             <a href="https://drive.google.com/file/d/13OL-wHS114kV1GoU-UYl8ZzORWBQ65o5/view" class="btn active">Download CV</a>
             <a href="#" class="btn" id="contactBtn">Contact</a>
@@ -64,7 +62,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>    
   </div>
 
   <!-- Modern Contact Popup -->
@@ -79,47 +77,7 @@
   </div>
 
   <!-- Typed JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-  <script>
-    // Navbar toggle (if exists)
-    var togglebtn = document.querySelector(".togglebtn");
-    var nav = document.querySelector(".navlinks");
-    if (togglebtn) {
-      togglebtn.addEventListener("click", function () {
-        this.classList.toggle("click");
-        nav.classList.toggle("open");
-      });
-    }
-
-    // Popup open/close logic
-    const contactBtn = document.getElementById("contactBtn");
-    const popup = document.getElementById("contactPopup");
-    const closeBtn = popup.querySelector(".close-btn");
-
-    contactBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      popup.style.display = "flex";
-      // Focus popup for accessibility
-      popup.querySelector(".popup-content").focus();
-    });
-
-    closeBtn.addEventListener("click", () => {
-      popup.style.display = "none";
-    });
-
-    // Close popup when clicking outside the content
-    popup.addEventListener("click", (e) => {
-      if (e.target === popup) {
-        popup.style.display = "none";
-      }
-    });
-
-    // Optional: close popup on ESC key
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && popup.style.display === "flex") {
-        popup.style.display = "none";
-      }
-    });
-  </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+ <script src="script/script.js"></script>
 </body>
 </html>
