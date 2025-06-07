@@ -34,3 +34,10 @@
         popup.style.display = "none";
       }
     });
+
+    var typed=new Typed(".input",{
+      strings:["Backend Developer","Frontend Developer","Helpdesk Support"],
+      typedSpeed:70,
+      backSpeed:55,
+      loop:true
+  })
